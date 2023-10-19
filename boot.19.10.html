@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boots</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        @media screen and (max-width: 1000px) {
+            .linkNavBar {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body style="background-color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgb(97, 25, 25);padding: 0px;">
+        <div class="container-fluid p-1">
+            <a style="font-weight: 1500; padding-left: 30px;" class="navbar-brand" href="#">pixabay</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="display: flex; align-items: left;">
+                <div style="display: flex;flex:1">
+
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 linkNavBar">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">videos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            explore
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">join us</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="video">
+        <div style="position: relative;">
+            <div style="position: absolute;top:30px; left:30px;z-index: 1000">
+                <h1 style="color: white;">Spring</h1>
+            </div>
+            <video width="100%" height="240" controls autoplay
+                style="object-fit: cover;height: 90vh; padding: 30px; border-radius: 5%;">
+                <source src="mare.mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="cards1" style="width: 100%;">
+
+        <div class="row" style="margin-top:20px; padding-left: 30px ; padding-right: 30px;">
+            <div class="col-12 col-sm-6 col-lg-6 col-md-3" style="height: 90vh; position: relative;">
+                <div style="position: absolute;top:100px; left:40px;z-index: 1000">
+                    <h5 style="color: white;">Birds</h5>
+                </div>
+                <img src="https://cdn.pixabay.com/photo/2023/10/12/23/33/bird-8311908_640.jpg" alt=""
+                    style="width: 100%;height: 100%;object-fit: cover;filter:brightness(0.8); border-radius: 10%;">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-6 col-md-3" style="height: 90vh;padding: 0px;position: relative;">
+                <div style="position: absolute;top:100px; left:40px;z-index: 1000">
+                    <h5 style="color: white;">Nature</h5>
+                </div>
+                <img src="https://cdn.pixabay.com/photo/2023/09/22/07/14/rails-8268290_640.jpg" alt=""
+                    style="width: 100%;height: 100%;object-fit: cover;filter:brightness(0.8);border-radius: 10%;">
+            </div>
+        </div>
+    </section>
+    <section id="cards2">
+
+        <div class="row" style="margin-top:20px;padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
+            <div class="col-12 col-sm-6 col-lg-6 col-md-3" style="height: 90vh;position: relative;">
+                <div style="position: absolute;top:100px; left:40px;z-index: 1000">
+                    <h5 style="color: white;">Sky</h5>
+                </div>
+                <img src="https://cdn.pixabay.com/photo/2023/09/17/10/17/milky-way-8258264_640.jpg" alt=""
+                    style="width: 100%;height: 100%;object-fit: cover;filter:brightness(0.8);border-radius: 10%;">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-6 col-md-3" style="height: 90vh;padding: 0px;position: relative;">
+                <div style="position: absolute;top:100px; left:40px;z-index: 1000">
+                    <h5 style="color: white;">Flowers</h5>
+                </div>
+                <img src="https://cdn.pixabay.com/photo/2023/03/07/10/04/clamshell-orchid-7835395_640.jpg" alt=""
+                    style="width: 100%;height: 100%;object-fit: cover;object-fit: cover;filter:brightness(0.8);border-radius: 10%;">
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
